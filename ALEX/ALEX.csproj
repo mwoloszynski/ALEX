@@ -1,0 +1,146 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>ALEX</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Syncfusion.Licensing">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfBusyIndicator.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.SfBusyIndicator.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfChart.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.SfChart.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfInput.Wpf">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.SfInput.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfKanban.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.SfKanban.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfNavigationDrawer.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.SfNavigationDrawer.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfScheduler.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.SfScheduler.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfSkinManager.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.SfSkinManager.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.Shared.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Themes.MaterialDark.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.Themes.MaterialDark.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Themes.MaterialDarkBlue.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.Themes.MaterialDarkBlue.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Themes.MaterialLight.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.Themes.MaterialLight.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Themes.MaterialLightBlue.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.Themes.MaterialLightBlue.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Themes.Office2019Black.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.Themes.Office2019Black.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Themes.Office2019Colorful.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.Themes.Office2019Colorful.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Themes.Office2019DarkGray.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.Themes.Office2019DarkGray.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Themes.Office2019HighContrast.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.Themes.Office2019HighContrast.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Themes.Office2019White.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.Themes.Office2019White.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Themes.Windows11Dark.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.Themes.Windows11Dark.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Themes.Windows11Light.WPF">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.Themes.Windows11Light.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.Wpf">
+      <HintPath>D:\Syncfusion\Essential\WPF\26.1.35\precompiledassemblies\net6.0\Syncfusion.Tools.WPF.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+		<ItemGroup>
+		<Content Include="Assets\bk101.jpg">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\bk102.jpg">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\bk104.jpg">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\bk106.jpg">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\bk107.jpg">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	    <Content Include="Assets\bk109.jpg">
+           <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+           </Content>
+        <Content Include="Assets\bk110.jpg">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Include="Assets\bk112.jpg">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Include="Assets\Books.xml">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content><Content Include="Assets\nopreview.jpg">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+	</ItemGroup>
+<ItemGroup>
+		<Content Include="Models\PaletteList.xml">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+<ItemGroup>
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.7" />
+  <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.0-preview.6.24327.7" />
+  <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0-preview.6.24327.7" />
+  <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0-preview.6.24327.7" />
+  <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.122" />
+  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  <PackageReference Include="Syncfusion.Licensing" Version="26.1.42" />
+</ItemGroup>
+<ItemGroup>
+  <ProjectReference Include="..\BLL\BLL.csproj" />
+  <ProjectReference Include="..\COMMON\COMMON.csproj" />
+</ItemGroup>
+</Project>
+

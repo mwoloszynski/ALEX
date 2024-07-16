@@ -1,0 +1,26 @@
+Nie można dodać niektórych pakietów NuGet do projektu ALEX\ALEX.csproj. Być może jest to spowodowane Twoim wcześniejszym przełączeniem się do trybu offline. 
+Sprawdź następującą listę pakietów wymaganych przez kod źródłowy Twojego projektu i ręcznie dodaj brakujące pakiety: 
+
+Pakiet instalacyjny -Identyfikator Microsoft.Extensions.Hosting -Wersja 3.1.8
+Pakiet instalacyjny -Identyfikator Syncfusion.Tools.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.SfSkinManager.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.Themes.Office2019White.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.SfNavigationDrawer.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Microsoft.Xaml.Behaviors.Wpf -Wersja 1.1.19
+Pakiet instalacyjny -Identyfikator Syncfusion.SfChart.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.SfKanban.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.SfInput.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.SfBusyIndicator.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.SfScheduler.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.Shared.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.Themes.MaterialLight.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.Themes.Office2019Black.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.Themes.MaterialDark.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.Themes.MaterialDarkBlue.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.Themes.MaterialLightBlue.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.Themes.Office2019Colorful.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.Themes.Office2019DarkGray.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.Themes.Office2019HighContrast.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.Themes.Windows11Dark.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Syncfusion.Themes.Windows11Light.WPF -Wersja //Version###
+Pakiet instalacyjny -Identyfikator Newtonsoft.Json -Wersja 13.0.3

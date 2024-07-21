@@ -137,6 +137,27 @@
   <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.122" />
   <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   <PackageReference Include="Syncfusion.Licensing" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.SfBusyIndicator.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.SfChart.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.SfInput.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.SfKanban.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.SfNavigationDrawer.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.SfScheduler.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.SfTextInputLayout.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.Shared.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.Themes.MaterialDark.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.Themes.MaterialDarkBlue.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.Themes.MaterialLight.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.Themes.MaterialLightBlue.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.Themes.Office2019Black.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.Themes.Office2019Colorful.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.Themes.Office2019DarkGray.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.Themes.Office2019HighContrast.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.Themes.Office2019White.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.Themes.Windows11Dark.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.Themes.Windows11Light.WPF" Version="26.1.42" />
+  <PackageReference Include="Syncfusion.Tools.WPF" Version="26.1.42" />
 </ItemGroup>
 <ItemGroup>
   <ProjectReference Include="..\BLL\BLL.csproj" />

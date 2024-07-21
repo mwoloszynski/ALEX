@@ -66,7 +66,7 @@ namespace ALEX.Services
                 _shellWindow = _serviceProvider.GetService(typeof(IShellWindow)) as IShellWindow;
                 _navigationService.Initialize(_shellWindow.GetNavigationFrame());
                 _shellWindow.ShowWindow();
-                _navigationService.NavigateTo(typeof(ChartsViewModel).FullName);
+                _navigationService.NavigateTo(typeof(MainViewModel).FullName);
                 await Task.CompletedTask;
             }
         }

@@ -6,18 +6,28 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:properties="clr-namespace:ALEX.Properties"
     xmlns:chart="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
+    xmlns:syncFusion="http://schemas.syncfusion.com/wpf"
 	xmlns:vm="clr-namespace:ALEX.ViewModels"
     mc:Ignorable="d"
+    Loaded="Page_Loaded"
     d:DesignHeight="450" d:DesignWidth="800">
+    <Page.DataContext>
+        <vm:ChartsViewModel/>
+    </Page.DataContext>
     <Grid>
-        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <syncFusion:ButtonAdv Command="{Binding TestCommand}" Label="Add Stock" Width="100" Height="40"/>
+        </Grid>
+        <Grid Grid.Row="1">
             <chart:SfChart Margin="20" 
-                    Header="Trade Volume Analysis: Imports and Exports"
-                    FontSize="17"
-                    FontWeight="Bold">
-                <chart:SfChart.DataContext>
-                    <vm:ChartsViewModel/>
-                </chart:SfChart.DataContext>
+                           Header="Trade Volume Analysis: Imports and Exports"
+                           FontSize="17"
+                           x:Name="chart"
+                           FontWeight="Bold">
                 <chart:SfChart.PrimaryAxis>
                     <chart:CategoryAxis PlotOffset="20" />
                 </chart:SfChart.PrimaryAxis>
@@ -34,13 +44,14 @@
                              EnablePanning="True"
                              EnableSelectionZooming="True"/>
                 </chart:SfChart.Behaviors>
-            <chart:LineSeries ItemsSource="{Binding Data}" 
-                              XBindingPath="Name" 
-                              YBindingPath="Imports"
-                              EnableAnimation="True"
-                              SegmentSelectionBrush="#d1d1e0"
-                              ShowTooltip="True"
-                              Label="Imports">
+                <chart:LineSeries ItemsSource="{Binding Data}" 
+                                  XBindingPath="Name" 
+                                  YBindingPath="Imports"
+                                  EnableAnimation="True"
+                                  SegmentSelectionBrush="#d1d1e0"
+                                  ShowTooltip="True"
+                                  x:Name="imports"
+                                  Label="Imports">
                     <chart:LineSeries.AdornmentsInfo>
                         <chart:ChartAdornmentInfo ShowLabel="True" SegmentLabelFormat="0.00'B">
                         </chart:ChartAdornmentInfo>

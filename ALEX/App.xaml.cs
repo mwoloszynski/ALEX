@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Reflection;
+using System.Threading;
 using System.Windows;
 using System.Windows.Threading;
 
@@ -33,7 +34,7 @@ namespace ALEX
         public App()
         {
 			// Add your Syncfusion license key for WPF platform with corresponding Syncfusion NuGet version referred in project. For more information about license key see https://help.syncfusion.com/common/essential-studio/licensing/license-key.
-			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NCaF5cXmZCeUx0Rnxbf1x0ZFxMY15bR3VPMyBoS35RckVkWHleeXdXRWNcVEV0"); 
+			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NCaF5cXmZCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdnWXhfeHVURmldUEB2VkA="); 
         }
 
         private async void OnStartup(object sender, StartupEventArgs e)
@@ -58,7 +59,6 @@ namespace ALEX
 
             // App Host
             services.AddHostedService<ApplicationHostService>();
-            services.AddHostedService<StockUpdaterService>();
 
             // Core Services
             services.AddSingleton<IFileService, FileService>();
@@ -75,14 +75,14 @@ namespace ALEX
             services.AddTransient<IShellWindow, ShellWindow>();
             services.AddTransient<ShellViewModel>();
 
+            services.AddTransient<MainViewModel>();
+            services.AddTransient<MainPage>();
+
             services.AddTransient<ChartsViewModel>();
             services.AddTransient<ChartsPage>();
 
             services.AddTransient<KanbanViewModel>();
             services.AddTransient<KanbanPage>();
-
-            services.AddTransient<MainViewModel>();
-            services.AddTransient<MainPage>();
 
             services.AddTransient<RangeSliderViewModel>();
             services.AddTransient<RangeSliderPage>();

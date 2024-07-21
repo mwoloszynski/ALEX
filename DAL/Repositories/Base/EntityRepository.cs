@@ -1,4 +1,5 @@
 ﻿using COMMON.Helpers;
+using COMMON.Helpers.Extensions;
 using DBMODEL.Entities;
 using System;
 using System.Collections.Generic;
@@ -11,12 +12,12 @@ namespace DAL.Repositories.Base
 {
     public class EntityRepository<TEntity> : BaseRepository where TEntity : BaseEntity, new()
     {
-        public virtual IEnumerable<TEntity> GetAll(Expression<Func<TEntity, bool>> filter = null)
+        public virtual IEnumerable<TEntity> GetAll(int? page = null, int? pageSize = null, Expression<Func<TEntity, bool>> filter = null)
         {
             using(var context = AlexDbContext())
             {
                 var result = context.Set<TEntity>().AsQueryable();
-                return filter == null ? result.ToList() : result.Where(filter).ToList();
+                return filter == null ? result.ToPaged(page, pageSize).ToList() : result.Where(filter).ToPaged(page, pageSize).ToList();
             }
         }
 

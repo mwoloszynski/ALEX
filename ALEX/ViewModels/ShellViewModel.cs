@@ -72,7 +72,21 @@ namespace ALEX.ViewModels
         // TODO WTS: Change the icons and titles for all HamburgerMenuItems here.
         public ObservableCollection<NavigationPaneItem> MenuItems { get; set; } = new ObservableCollection<NavigationPaneItem>()
         {
-        	new NavigationPaneItem() { 
+            new NavigationPaneItem() {
+                        Label = Resources.ShellMainPage,
+                        Path = new Path()
+                        {
+                            Width = 15,
+                            Height = 15,
+                            HorizontalAlignment = HorizontalAlignment.Center,
+                            VerticalAlignment = VerticalAlignment.Center,
+                            Data = Geometry.Parse("M28.414 4H7V44H39V14.586ZM29 7.414 35.586 14H29ZM9 42V6H27V16H37V42Z"),
+                            Fill = new SolidColorBrush(Colors.Black),
+                            Stretch = Stretch.Fill,
+                        },
+                        TargetType = typeof(MainViewModel)
+            },
+            new NavigationPaneItem() { 
                         Label = Resources.ShellChartsPage,
                         Path = new Path()
                         {
@@ -99,20 +113,6 @@ namespace ALEX.ViewModels
                             Stretch = Stretch.Fill,
                         },
                         TargetType = typeof(KanbanViewModel) 
-            },
-        	new NavigationPaneItem() { 
-                        Label = Resources.ShellMainPage,
-                        Path = new Path()
-                        {
-                            Width = 15,
-                            Height = 15,
-                            HorizontalAlignment = HorizontalAlignment.Center,
-                            VerticalAlignment = VerticalAlignment.Center,
-                            Data = Geometry.Parse("M28.414 4H7V44H39V14.586ZM29 7.414 35.586 14H29ZM9 42V6H27V16H37V42Z"),
-                            Fill = new SolidColorBrush(Colors.Black),
-                            Stretch = Stretch.Fill,
-                        },
-                        TargetType = typeof(MainViewModel) 
             },
         	new NavigationPaneItem() { 
                         Label = Resources.ShellRangeSliderPage,
